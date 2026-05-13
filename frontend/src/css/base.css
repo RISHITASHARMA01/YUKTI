@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ===== GLOBAL RESET & BASE STYLES ===== */
+:root {
+    --primary: #e07613;
+    --primary-light: #F2CC8F;
+    --secondary: #81B29A;
+    --accent: #F4D35E;
+    --text-dark: #2B2D42;
+    --text-light: #5D6B75;
+    --bg-light: #F4F1DE;
+    --white: #FFFFFF;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary), #D06A4F);
+    --gradient-secondary: linear-gradient(135deg, var(--secondary), #6B9B85);
+    --gradient-text: linear-gradient(135deg, var(--primary), #D06A4F);
+    --gradient-bg: linear-gradient(135deg, var(--bg-light), #FFFFFF);
+}
+
+.floating-shape {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    z-index: -1;
+    animation: float 20s infinite ease-in-out;
+}
+
+.shape-1 {
+    width: 500px;
+    height: 500px;
+    background: var(--gradient-primary);
+    top: -250px;
+    right: -250px;
+}
+
+.shape-2 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    /* Kept distinct for shape variety */
+    bottom: -200px;
+    left: -200px;
+    animation-delay: 5s;
+}
+
+.shape-3 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    /* Kept distinct for shape variety */
+    top: 50%;
+    left: 50%;
+    animation-delay: 10s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(50px, 50px) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(0, 100px) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(-50px, 50px) rotate(270deg);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
