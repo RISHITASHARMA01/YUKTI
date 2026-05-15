@@ -144,8 +144,7 @@ Contributions and suggestions are welcome.
 
 **Rishita Sharma** and **Ananya Raj wansh**
 
-GitHub: https://github.com/RISHITASHARMA01
-        https://github.com/ananyarajwansh
+GitHub: https://github.com/RISHITASHARMA01 | https://github.com/ananyarajwansh
 
 
 
